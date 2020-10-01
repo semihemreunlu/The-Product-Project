@@ -9,10 +9,11 @@ import Foundation
 
 // MARK: - ProductDetail
 struct ProductDetail: Codable {
-    let productId, name: String
-    let price: Int
-    let image: String
-    let productDetailDescription: String
+    let productId: String
+    let name: String?
+    let price: Int?
+    let image: String?
+    let productDetailDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case productId = "product_id"

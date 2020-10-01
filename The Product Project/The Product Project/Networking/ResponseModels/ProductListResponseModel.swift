@@ -14,9 +14,10 @@ struct ProductList: Codable {
 
 // MARK: - Product
 struct Product: Codable {
-    let productId, name: String
-    let price: Int
-    let image: String
+    let productId: String
+    let name: String?
+    let price: Int?
+    let image: String?
 
     enum CodingKeys: String, CodingKey {
         case productId = "product_id"

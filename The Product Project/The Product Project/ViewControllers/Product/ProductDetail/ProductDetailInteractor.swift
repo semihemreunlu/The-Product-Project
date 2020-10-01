@@ -24,7 +24,7 @@ final class ProductDetailInteractor: ProductDetailInteractorProtocol {
             self.delegate?.handleOutput(.setLoading(false))
             
             if error != nil {
-                self.delegate?.handleOutput(.setErrorMessage("error_unknown".localize))
+                self.delegate?.handleOutput(.setErrorMessage("Unknown Error"))
             } else {
                 self.delegate?.handleOutput(.setProduct(product))
             }

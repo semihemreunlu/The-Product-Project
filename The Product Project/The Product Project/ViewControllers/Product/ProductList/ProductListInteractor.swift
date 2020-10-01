@@ -23,7 +23,7 @@ final class ProductListInteractor: ProductListInteractorProtocol {
             self.delegate?.handleOutput(.setLoading(false))
             
             if error != nil {
-                self.delegate?.handleOutput(.setErrorMessage("error_unknown".localize))
+                self.delegate?.handleOutput(.setErrorMessage("Unknown Error"))
             } else {
                 self.productList = productList
                 self.delegate?.handleOutput(.setProductList(productList))

@@ -37,7 +37,7 @@ class ProductListViewController: BaseViewController<ProductListPresenter> {
     func setNavigationBar() {
         let barButton = UIButton(type: .custom)
         barButton.addTarget(self, action: #selector(changeLayout), for: .touchUpInside)
-        barButton.setImage(UIImage(named: "change2"), for: UIControl.State())
+        barButton.setImage(UIImage(named: "change"), for: UIControl.State())
         
         let barButtonItem = UIBarButtonItem(customView: barButton)
         self.navigationItem.leftBarButtonItem = barButtonItem

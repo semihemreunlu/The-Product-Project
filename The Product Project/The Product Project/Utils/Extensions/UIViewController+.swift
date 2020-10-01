@@ -31,7 +31,7 @@ extension UIViewController {
     
     func showAlert(_ message: String) {
         let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "ok".localize, style: .default, handler: nil)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(alertAction)
         self.present(alertController, animated: true, completion: nil)
     }
