@@ -13,6 +13,7 @@
 - Service Provider pattern
 - JSON codable mapping
 - Unit testing
+- Hero Transition
 
 ## Install
 ```
