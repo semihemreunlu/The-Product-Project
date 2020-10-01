@@ -6,6 +6,9 @@ target 'The Product Project' do
   use_frameworks!
   
   pod 'Moya'
+  pod 'SDWebImage'
+  pod 'Hero'
+  pod 'ProgressHUD'
   
   target 'The Product ProjectTests' do
     inherit! :search_paths

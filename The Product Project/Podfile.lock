@@ -1,26 +1,40 @@
 PODS:
   - Alamofire (4.9.1)
+  - Hero (1.5.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - ProgressHUD (13.4)
   - Result (4.1.0)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
 
 DEPENDENCIES:
+  - Hero
   - Moya
+  - ProgressHUD
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Hero
     - Moya
+    - ProgressHUD
     - Result
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
 
-PODFILE CHECKSUM: d92d345b4a4e91317d4ad8538a76814885c44bdc
+PODFILE CHECKSUM: 1a0301bf0476dbdadfdc51dc22f90ab23be6f874
 
 COCOAPODS: 1.8.3

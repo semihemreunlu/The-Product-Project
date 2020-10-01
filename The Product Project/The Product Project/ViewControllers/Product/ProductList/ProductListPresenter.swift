@@ -41,7 +41,8 @@ extension ProductListPresenter: ProductListInteractorDelegate {
             for product in productList?.products ?? [] {
                 let productPresentation = ProductListPresentation(name: product.name,
                                                                   price: product.price,
-                                                                  image: product.image)
+                                                                  image: product.image,
+                                                                  productId: product.productId)
                 products.append(productPresentation)
             }
             
