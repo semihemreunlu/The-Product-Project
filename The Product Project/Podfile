@@ -4,9 +4,9 @@
 target 'The Product Project' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for The Product Project
-
+  
+  pod 'Moya'
+  
   target 'The Product ProjectTests' do
     inherit! :search_paths
     # Pods for testing
