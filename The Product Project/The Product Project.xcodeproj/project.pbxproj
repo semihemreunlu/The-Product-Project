@@ -23,6 +23,18 @@
 		0C5A7C6D2525AE7E0066C3E0 /* ServiceDefinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7C6C2525AE7E0066C3E0 /* ServiceDefinable.swift */; };
 		0C5A7C9B2525B2D40066C3E0 /* ProductServiceContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7C9A2525B2D40066C3E0 /* ProductServiceContracts.swift */; };
 		0C5A7CA32525B3040066C3E0 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CA22525B3040066C3E0 /* ProductService.swift */; };
+		0C5A7CCA2525B8CB0066C3E0 /* ProductListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CC92525B8CB0066C3E0 /* ProductListBuilder.swift */; };
+		0C5A7CD22525B8D50066C3E0 /* ProductListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CD12525B8D50066C3E0 /* ProductListContracts.swift */; };
+		0C5A7CD72525B8DF0066C3E0 /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CD62525B8DF0066C3E0 /* ProductListPresenter.swift */; };
+		0C5A7CDC2525B8EB0066C3E0 /* ProductListPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CDB2525B8EB0066C3E0 /* ProductListPresentation.swift */; };
+		0C5A7CE12525B8FA0066C3E0 /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CE02525B8FA0066C3E0 /* ProductListInteractor.swift */; };
+		0C5A7CE62525B9060066C3E0 /* ProductListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CE52525B9060066C3E0 /* ProductListRouter.swift */; };
+		0C5A7CEC2525B9140066C3E0 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CEA2525B9140066C3E0 /* ProductListViewController.swift */; };
+		0C5A7CED2525B9140066C3E0 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5A7CEB2525B9140066C3E0 /* ProductListViewController.xib */; };
+		0C5A7CF32525B9F30066C3E0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CF22525B9F30066C3E0 /* BaseViewController.swift */; };
+		0C5A7CFB2525BA340066C3E0 /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CFA2525BA340066C3E0 /* BasePresenterProtocol.swift */; };
+		0C5A7D002525BA530066C3E0 /* BaseRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7CFF2525BA530066C3E0 /* BaseRouterProtocol.swift */; };
+		0C5A7D062525BA9B0066C3E0 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7D052525BA9B0066C3E0 /* UIViewController+.swift */; };
 		65EA5775999C59F5D10C957F /* Pods_The_Product_Project_The_Product_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6A18918D6D6B2B7A064D90 /* Pods_The_Product_Project_The_Product_ProjectUITests.framework */; };
 		707D8BCD10DB3BAA080F6200 /* Pods_The_Product_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031D6365C6847506F43E10CF /* Pods_The_Product_ProjectTests.framework */; };
 		B011249FF0B2D1DF6F6EFB60 /* Pods_The_Product_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB1D1FC8373A33AD82D73FF /* Pods_The_Product_Project.framework */; };
@@ -70,6 +82,18 @@
 		0C5A7C6C2525AE7E0066C3E0 /* ServiceDefinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDefinable.swift; sourceTree = "<group>"; };
 		0C5A7C9A2525B2D40066C3E0 /* ProductServiceContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceContracts.swift; sourceTree = "<group>"; };
 		0C5A7CA22525B3040066C3E0 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		0C5A7CC92525B8CB0066C3E0 /* ProductListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListBuilder.swift; sourceTree = "<group>"; };
+		0C5A7CD12525B8D50066C3E0 /* ProductListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListContracts.swift; sourceTree = "<group>"; };
+		0C5A7CD62525B8DF0066C3E0 /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
+		0C5A7CDB2525B8EB0066C3E0 /* ProductListPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresentation.swift; sourceTree = "<group>"; };
+		0C5A7CE02525B8FA0066C3E0 /* ProductListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
+		0C5A7CE52525B9060066C3E0 /* ProductListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRouter.swift; sourceTree = "<group>"; };
+		0C5A7CEA2525B9140066C3E0 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		0C5A7CEB2525B9140066C3E0 /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		0C5A7CF22525B9F30066C3E0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0C5A7CFA2525BA340066C3E0 /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		0C5A7CFF2525BA530066C3E0 /* BaseRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterProtocol.swift; sourceTree = "<group>"; };
+		0C5A7D052525BA9B0066C3E0 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		1B3E93EAB881F169C493308E /* Pods-The Product ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Product ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-The Product ProjectTests/Pods-The Product ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FE1CC3F2B6D5673E236811D /* Pods-The Product Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Product Project.debug.xcconfig"; path = "Target Support Files/Pods-The Product Project/Pods-The Product Project.debug.xcconfig"; sourceTree = "<group>"; };
 		655CF020C7EDE02EEE7B7E69 /* Pods-The Product Project-The Product ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Product Project-The Product ProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Product Project-The Product ProjectUITests/Pods-The Product Project-The Product ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +236,7 @@
 		0C5A7C8F2525B2690066C3E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0C5A7D042525BA8E0066C3E0 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -221,6 +246,7 @@
 			children = (
 				0C5A7C9A2525B2D40066C3E0 /* ProductServiceContracts.swift */,
 				0C5A7CA22525B3040066C3E0 /* ProductService.swift */,
+				0C5A7CC02525B8890066C3E0 /* ProductList */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -228,9 +254,43 @@
 		0C5A7C912525B2A50066C3E0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C5A7CF12525B9E80066C3E0 /* Base */,
 				0C5A7C902525B2910066C3E0 /* Product */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0C5A7CC02525B8890066C3E0 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				0C5A7CC92525B8CB0066C3E0 /* ProductListBuilder.swift */,
+				0C5A7CD12525B8D50066C3E0 /* ProductListContracts.swift */,
+				0C5A7CD62525B8DF0066C3E0 /* ProductListPresenter.swift */,
+				0C5A7CDB2525B8EB0066C3E0 /* ProductListPresentation.swift */,
+				0C5A7CE02525B8FA0066C3E0 /* ProductListInteractor.swift */,
+				0C5A7CE52525B9060066C3E0 /* ProductListRouter.swift */,
+				0C5A7CEA2525B9140066C3E0 /* ProductListViewController.swift */,
+				0C5A7CEB2525B9140066C3E0 /* ProductListViewController.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		0C5A7CF12525B9E80066C3E0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0C5A7CF22525B9F30066C3E0 /* BaseViewController.swift */,
+				0C5A7CFA2525BA340066C3E0 /* BasePresenterProtocol.swift */,
+				0C5A7CFF2525BA530066C3E0 /* BaseRouterProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0C5A7D042525BA8E0066C3E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C5A7D052525BA9B0066C3E0 /* UIViewController+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1D220FE43EB03FDC680C2E2C /* Frameworks */ = {
@@ -367,6 +427,7 @@
 				0C5A7C472525AD6B0066C3E0 /* products.json in Resources */,
 				0C5A7C4F2525AD770066C3E0 /* product.json in Resources */,
 				0C5A7BFE2525ABD30066C3E0 /* LaunchScreen.storyboard in Resources */,
+				0C5A7CED2525B9140066C3E0 /* ProductListViewController.xib in Resources */,
 				0C5A7BFB2525ABD30066C3E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,16 +556,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5A7CE62525B9060066C3E0 /* ProductListRouter.swift in Sources */,
+				0C5A7CEC2525B9140066C3E0 /* ProductListViewController.swift in Sources */,
 				0C5A7C9B2525B2D40066C3E0 /* ProductServiceContracts.swift in Sources */,
 				0C5A7BF22525ABD30066C3E0 /* AppDelegate.swift in Sources */,
 				0C5A7C3A2525AD050066C3E0 /* ProductDetailResponseModel.swift in Sources */,
+				0C5A7CF32525B9F30066C3E0 /* BaseViewController.swift in Sources */,
+				0C5A7CD22525B8D50066C3E0 /* ProductListContracts.swift in Sources */,
 				0C5A7BF42525ABD30066C3E0 /* SceneDelegate.swift in Sources */,
 				0C5A7C322525ACF20066C3E0 /* ProductListResponseModel.swift in Sources */,
 				0C5A7C6D2525AE7E0066C3E0 /* ServiceDefinable.swift in Sources */,
+				0C5A7CCA2525B8CB0066C3E0 /* ProductListBuilder.swift in Sources */,
+				0C5A7CE12525B8FA0066C3E0 /* ProductListInteractor.swift in Sources */,
 				0C5A7C652525AE5E0066C3E0 /* RequestHeaders.swift in Sources */,
+				0C5A7D002525BA530066C3E0 /* BaseRouterProtocol.swift in Sources */,
+				0C5A7D062525BA9B0066C3E0 /* UIViewController+.swift in Sources */,
+				0C5A7CFB2525BA340066C3E0 /* BasePresenterProtocol.swift in Sources */,
+				0C5A7CD72525B8DF0066C3E0 /* ProductListPresenter.swift in Sources */,
 				0C5A7C2C2525AC9B0066C3E0 /* Enviroment.swift in Sources */,
 				0C5A7C602525AE350066C3E0 /* RequestParams.swift in Sources */,
 				0C5A7CA32525B3040066C3E0 /* ProductService.swift in Sources */,
+				0C5A7CDC2525B8EB0066C3E0 /* ProductListPresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
