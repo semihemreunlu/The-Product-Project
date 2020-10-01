@@ -8,26 +8,42 @@
 import XCTest
 @testable import The_Product_Project
 
+private var view: ProductListViewMock!
+private var interactor: ProductListInteractor!
+private var presenter: ProductListPresenter!
+private var router: ProductListRouterMock!
+private var service: ProductServiceMock!
+
 class The_Product_ProjectTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        override class func setUp() {
+            super.setUp()
+        
+            service = ProductServiceMock()
+            view = ProductListViewMock()
+            interactor = ProductListInteractor(service: service)
+            router = ProductListRouterMock()
+            presenter = ProductListPresenter(interactor: interactor,
+                                             view: view,
+                                             router: router)
+            view.presenter = presenter
         }
+    
+    func testLoadProductList(){
+        // Given:
+        let productList = try? ResourceLoader.loadProductList(from: "products")
+        service.productList = productList
+        
+        // When:
+        view.viewDidLoad()
+        
+        // Then:
+        XCTAssertEqual(view.outputs.count, 3)
+        
+        XCTAssertEqual(view.outputs[0], .setLoading(true))
+        XCTAssertEqual(view.outputs[1], .setLoading(false))
+        XCTAssertEqual(view.outputs[2], .setProducts([]))
     }
-
 }
+
+
