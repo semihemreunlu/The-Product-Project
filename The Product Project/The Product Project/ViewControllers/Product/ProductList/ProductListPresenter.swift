@@ -24,6 +24,10 @@ final class ProductListPresenter: BasePresenterProtocol, ProductListPresenterPro
     func load() {
         interactor?.load()
     }
+    
+    func productSelected(at index: Int) {
+        interactor?.productSelected(at: index)
+    }
 }
 
 extension ProductListPresenter: ProductListInteractorDelegate {
@@ -31,6 +35,21 @@ extension ProductListPresenter: ProductListInteractorDelegate {
         switch output {
         case .setLoading(let isLoading):
             view?.handleOutput(.setLoading(isLoading))
+        case .setProductList(let productList):
+            var products: [ProductListPresentation] = []
+            
+            for product in productList?.products ?? [] {
+                let productPresentation = ProductListPresentation(name: product.name,
+                                                                  price: product.price,
+                                                                  image: product.image)
+                products.append(productPresentation)
+            }
+            
+            view?.handleOutput(.setProducts(products))
+        case .setErrorMessage(let message):
+            view?.handleOutput(.setErrorMessage(message))
+        case .productSelected(let productId):
+            router?.navigate(to: .productDetail(productId))
         }
     }
 }

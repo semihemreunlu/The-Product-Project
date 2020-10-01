@@ -17,5 +17,24 @@ final class ProductListInteractor: ProductListInteractorProtocol {
     }
     
     func load() {
+        self.delegate?.handleOutput(.setLoading(true))
+        
+        self.service.getProductList(completion: { (productList, error) in
+            self.delegate?.handleOutput(.setLoading(false))
+            
+            if error != nil {
+                self.delegate?.handleOutput(.setErrorMessage("error_unknown".localize))
+            } else {
+                self.productList = productList
+                self.delegate?.handleOutput(.setProductList(productList))
+            }
+        })
+    }
+    
+    func productSelected(at index: Int) {
+        guard let productId = productList?.products[safe: index]?.productId else {
+            return
+        }
+        self.delegate?.handleOutput(.productSelected(productId))
     }
 }

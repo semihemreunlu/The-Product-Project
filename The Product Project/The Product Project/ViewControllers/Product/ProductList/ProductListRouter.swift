@@ -15,6 +15,9 @@ class ProductListRouter: ProductListRouterProtocol {
     }
     
     func navigate(to route: ProductListRoute) {
-        
+        switch route {
+        case .productDetail(let productId):
+        break
+        }
     }
 }
