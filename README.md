@@ -7,12 +7,12 @@
 - Cocoapods
 
 ## Architecture
-- Localization for languages
 - XIBs based on Autolayout
 - VIPER module controller
 - Service Provider pattern
 - JSON codable mapping
 - Unit testing
+- Hero Transition
 
 ## Install
 ```
